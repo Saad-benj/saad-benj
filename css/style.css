@@ -75,10 +75,10 @@ picture {
     font-display: swap;
 }
 @font-face {
-    font-family: 'Font Awesome Pro Regular';
-    src: url("../font/fontawesome/webfont/fa-pro-regular-400.woff2") format("WOFF2"),
-        url("../font/fontawesome/webfont/fa-pro-regular-400.woff") format("WOFF");
-        font-weight: 400;
+    font-family: 'Font Awesome Pro Solid';
+    src: url("../font/fontawesome/webfonts/fa-pro-solid-900.woff2") format("WOFF2"),
+        url("../font/fontawesome/webfonts/fa-pro-solid-900.woff") format("WOFF");
+        font-weight: 900;
         font-display: swap;
 }
 
@@ -285,8 +285,19 @@ header>nav>a.nav-logo:hover {
     border-bottom-color: #dfe2e5;
     width: 100%;
     position: relative;
+    gap: 0.5rem;
 }
-
+.accordion-body ul>li>a>i.fa-basketball{
+    --fa-bounce-land-scale-x: 1.2;
+    --fa-bounce-land-scale-y: .8;
+    --fa-bounce-rebound: 5px;
+}
+.accordion-body ul>li>a>span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 .accordion-body ul>li>a::after {
     content: "";
     position: absolute;
