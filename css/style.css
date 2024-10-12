@@ -292,6 +292,11 @@ header>nav>a.nav-logo:hover {
     --fa-bounce-land-scale-y: .8;
     --fa-bounce-rebound: 5px;
 }
+.accordion-body ul>li>a>svg{
+    display: flex;
+    height: 1rem;
+    width: 1rem;
+}
 .accordion-body ul>li>a>span{
     display: flex;
     justify-content: space-between;
