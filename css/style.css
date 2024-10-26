@@ -150,7 +150,12 @@ button {
     background-color: #3b3d3e;
     border-color: #3b3d3e;
 }
-
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+  }
 /* Navigation */
 header>nav {
     display: flex;
@@ -194,7 +199,42 @@ header>nav>a.nav-logo:hover {
     height: 500px;
     object-fit: cover;
 }
-
+/* Conteneur général de la section */
+.about-me {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+  
+  /* Contenu centré avec un maximum de largeur */
+  .about-me-content {
+    max-width: 800px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  /* Titre stylisé */
+  .about-me h5 {
+    font-size: 2.5em;
+    color: #333; /* Couleur pour le texte */
+    margin-bottom: 15px;
+    font-family: "PangramSans", sans-serif; /* Exemple de police moderne */
+    font-weight: 700;
+    border-bottom: 3px solid #4CAF50; /* Ligne sous le titre */
+    display: inline-block; /* Pour centrer la ligne sous le titre */
+    padding-bottom: 5px;
+  }
+  
+  /* Texte du paragraphe */
+  .about-me p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #666; /* Couleur douce pour le paragraphe */
+    text-align: justify;
+    margin-top: 20px;
+    font-family: "PangramSans", sans-serif; /* Police pour le texte */
+  }
 /* Accordion Menu */
 .accordion-wrapper {
     margin-top: var(--margin-main);
@@ -317,7 +357,34 @@ header>nav>a.nav-logo:hover {
 .accordion-body ul>li>a:hover::after {
     width: 100%;
 }
-
+.accordion-body ul>li>a>img{
+    width: 1rem;
+    height: 1rem;  
+}
+.img-bounce {
+    display: inline-block;
+    animation: bounce 1s infinite;
+    transform-origin: center bottom;
+}
+.svg-bounce{
+    display: inline-block;
+    animation: bounce 1s infinite;
+    transform-origin: center bottom;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0) scaleX(1) scaleY(1); /* Position normale */
+    }
+    30% {
+        transform: translateY(-8px) scaleX(1.05) scaleY(0.95); /* Étirement vers le haut */
+    }
+    50% {
+        transform: translateY(0) scaleX(0.95) scaleY(1.05); /* Écrasement */
+    }
+    70% {
+        transform: translateY(-5px) scaleX(1.02) scaleY(0.98); /* Étirement plus léger */
+    }
+}
 /* Footer */
 footer>nav {
     padding-top: 1.5rem;
