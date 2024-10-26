@@ -81,7 +81,13 @@ picture {
         font-weight: 900;
         font-display: swap;
 }
-
+@font-face {
+    font-family: 'Font Awesome Brands';
+    src: url("../font/fontawesome/webfonts/fa-pro-brands-400.woff2") format("WOFF2"),
+        url("../font/fontawesome/webfonts/fa-pro-brands-400.woff") format("WOFF");
+        font-weight: 900;
+        font-display: swap;
+}
 /* Titles */
 h1,
 .h1 {
@@ -156,6 +162,13 @@ button {
     justify-content: center;
     margin-top: 30px;
   }
+.button-group>a>svg{
+    display: inline-flex;
+    height: 1rem;
+    width:1rem
+    
+}
+
 /* Navigation */
 header>nav {
     display: flex;
