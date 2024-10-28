@@ -85,7 +85,7 @@ picture {
     font-family: 'Font Awesome Brands';
     src: url("../font/fontawesome/webfonts/fa-pro-brands-400.woff2") format("WOFF2"),
         url("../font/fontawesome/webfonts/fa-pro-brands-400.woff") format("WOFF");
-        font-weight: 900;
+        font-weight: 400;
         font-display: swap;
 }
 /* Titles */
@@ -108,6 +108,10 @@ h4,
 .h4 {
     font-size: 1.25rem;
 }
+h5{
+    font-size: 4rem;
+    text-align: center;
+}
 
 /* Container */
 main {
@@ -124,7 +128,36 @@ main {
 .container {
     max-width: 1400px;
 }
+.construction-container {
+    text-align: center;
+    padding: 2rem;
+    margin-top: var(--margin-main);
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.construction-icon {
+    font-size: 4rem;
+    color: #ffcc00;
+    margin-bottom: 1.5rem;
+}
+
+.construction-container h1 {
+    font-family: "MonumentExtended", sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.construction-container p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #ccc;
+    font-family: "PangramSans", sans-serif;
+    margin-bottom: 2rem;
+}
 /* Boutons */
 .btn,
 button {
