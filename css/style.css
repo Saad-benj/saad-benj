@@ -158,6 +158,91 @@ main {
     font-family: "PangramSans", sans-serif;
     margin-bottom: 2rem;
 }
+/* Center video */
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Pitch contacts section */
+.pitch-contacts h5 {
+    margin-top: 3rem;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Contact cards layout */
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* Individual contact card styling */
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer le contenu horizontalement */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px; /* Espacement entre les cartes */
+    max-width: 250px; /* Limite la largeur de chaque carte pour un meilleur rendu */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact card image styling */
+.contact-card>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    
+}
+
+/* Contact info styling */
+.contact-info h6 {
+    font-size: 1.2rem;
+    color: #222;
+    margin: 0.5rem 0;
+}
+
+.contact-role {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+.contact-description {
+    font-size: 0.875rem;
+    color: #555;
+    margin: 0.5rem 0 1rem;
+}
+
+/* LinkedIn link styling */
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    color: #0A66C2;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.linkedin-link i {
+    margin-right: 0.3rem;
+    font-size: 1.2rem;
+}
 /* Boutons */
 .btn,
 button {
