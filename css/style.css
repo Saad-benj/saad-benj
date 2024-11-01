@@ -163,10 +163,11 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 /* Pitch contacts section */
-.pitch-contacts h5 {
+.pitch-contacts h1,.pitch-contacts h2, .pitch-video h1 {
     margin-top: 3rem;
     text-align: center;
     color: #333;
@@ -279,12 +280,12 @@ button {
     gap: 15px;
     justify-content: center;
     margin-top: 30px;
+    flex-wrap: wrap;
   }
 .button-group>a>svg{
     display: inline-flex;
     height: 1rem;
     width:1rem
-    
 }
 
 /* Navigation */
@@ -593,5 +594,11 @@ footer>nav>span {
 
     .accordion-body ul>li {
         flex: 0 0 100%;
+    }
+    .about-me-content { 
+        padding: 0;
+    }
+    .button-group a { 
+        width: 100%
     }
 }
